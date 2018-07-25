@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+<h1>Контакти</h1>
+<form action="/home/contact" method="POST">
+    email: <br>
+    <input type="email" name="Email"><br>
+    Дата від'їзду: <br>
+    <input type="month" name="Date"><br>
+    Введіть повідомлення тут: <br>
+    <textarea name="Message" id="message" cols="30" rows="10"></textarea><br>
+    <input type="submit" value="Відправити">
+</form>
+
+<h1>@ViewBag.Message</h1>
